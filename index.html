@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Đồng hồ bấm giờ</h1>
+<style src ="css.css"></style>
+<button id="over1" onmouseover="over1('lime')" onmouseout="out1('white')" onclick="start()">Bắt đầu</button>
+<button id="over2" onmouseover="over2('blue')" onmouseout="out2('white')" onclick="transfer()">Chuyển</button>
+<button id="over3" onmouseover="over3('orange')" onmouseout="out3('white')" onclick="stop()">Dừng</button>
+<button id="over4" onmouseover="over4('red')" onmouseout="out4('white')" onclick="reset()">Xóa</button>
+<form>
+<input type="text" name="display"size="20"value="00:00:00">
+    <p><span id="stop"></span></p>
+</form>
+<script src = "bg.js"></script>
+<audio controls autoplay>
+    <source src="../file/bell.mp3">
+</audio>
+</body>
+</html>
